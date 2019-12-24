@@ -1,0 +1,65 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrap {
+    flex: 1;
+}
+
+.bg-beetroot {
+    background-color: #eef9f5;
+}
+.top-header {
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    padding: 0.3rem 0;
+    margin-bottom: 1rem;
+}
+.result {
+    font-size: 1.4rem;
+}
+
+.products-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+}
+.products-list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-list img{
+   width: 100%;
+}
+
+
+
+.done {
+    color: orangered;
+    text-decoration: line-through;
+}
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: darkcyan;
+}
+
+.ch-group label {
+    display: block;
+    margin-bottom: .5rem;
+}
+.ch-group input {
+    margin-right: .5rem;
+}
+
+.tasks-select-filter {
+    background: transparent;
+    padding: .3rem;
+}

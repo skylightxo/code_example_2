@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <title>Second Example</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   </head>
+<body>
+<div  id="app" class="app-container">
+<section class="container">
+  <h1 class="h3 text-center">List of tasks</h1>
+
+  <div class="row">
+    <div class="col-md-6">
+            
+    <div class="d-flex mb-3">
+<!-- Filters-->
+      <select id="filter-tasks" class="tasks-select-filter">
+        <option value="1">Show all tasks</option>
+        <option value="2">Show Done</option>
+        <option value="3">Show Remain</option>
+      </select>
+
+      <input id="search-box" type="text" class="form-control ml-5" name="search-tasks">
+<!-- END Filters-->
+     </div>
+<!-- Tasks's list -->
+    <ul id="tasks-box" class="list-group mb-5">
+      
+      <li class="list-group-item  d-flex">
+        <span>Task one</span>
+        <div class="icons-box ml-auto">
+          <i class="fa fa-check mr-3"></i>
+          <i class="fa fa-trash"></i>
+        </div>
+      </li>
+      <li class="list-group-item d-flex">
+        <span class="done">Task three</span>
+        <div class="icons-box ml-auto">
+          <i class="fa fa-check mr-3"></i>
+          <i  class="fa fa-trash"></i>
+        </div>
+       </li>
+      </ul>
+<!-- EMD Tasks's list -->
+    </div><!-- /.col-md-6-->
+
+    <div class="col-md-5 offset-md-1">
+        <div id="tasks-info" class="mb-5">
+            <p class="mr-3 h5">Total -  <span  id="tasks-total">3</span</p>
+            <p class="mr-3 h5">Done - <span id="tasks-done">2</span></p>
+            <p class="mr-3 h5">Remain - <span id="tasks-remain">1</span></p>
+        </div>
+
+        <form id="task-form" autocomplete="off">
+            <div class="group-control mb-3">
+                <input type="text" name="title" class="form-control">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Add Task">
+        </form>
+    </div> <!--/.col-md-6  -->
+</div> <!-- /.row  -->
+</section>
+</div> <!-- /.container -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
